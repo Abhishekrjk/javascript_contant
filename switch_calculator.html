@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center">welcome to class</h1>
+    <!-- <input type="text" id="nm1" placeholder="Enter your no"><br>
+    <input type="text" id="nm2" placeholder="Enter your no2"><br>
+    <input type="text" id="nm3" placeholder="Enter your choise"><br>
+    <button onclick="Add_no()">1 Add</button>
+    <button onclick="Multi_no()">2 Multiply</button>
+    <button onclick="Division_no()"> 3 division</button>
+    <button onclick="sutraction_no()">4 sustractio</button> -->
+    value=<p id="display"></p>
+    
+   
+    <script>
+         var x=parseFloat(prompt("Enter your first number"));
+         var y=parseFloat(prompt("Enter your second number"));
+         let a=parseInt(prompt("enter your choice 1.add 2.multi 3.div 4.sub"));
+        switch(a)
+        {
+            case 1 :
+           
+        var z=x+y;
+        document.getElementById("display").innerHTML=z;
+               
+                break;
+                case 2 :
+              
+        var z=x*y;
+        document.getElementById("display").innerHTML=z;
+                
+                break;
+                case 3 :
+               
+        var z=x/y;
+                document.getElementById("display").innerHTML=z;
+                break;
+                case 4 :
+              
+        var z=x/y;
+                document.getElementById("display").innerHTML=z;
+                break;
+        }
+    </script>
+</body>
+</html>
