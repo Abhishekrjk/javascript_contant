@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Abhishek</h1>
+<input type="text" id="nm1" placeholder="Enter your first no" >
+<input type="text" id="nm2" placeholder="Enter your second no" >
+<button onclick="facter_no()">chack</button>
+<p id="display"></p>
+<p id="display2"></p>
+<script>
+    function facter_no(){
+
+var x=parseInt(document.getElementById("nm1").value);
+var y=parseInt(document.getElementById("nm2").value);
+var i =1;
+var data = " ";
+
+var prime =" ";
+for(var i=x;i<=y;i++)
+{
+    var c = 0;
+    var f = 0;
+    for(var j=1;j<=i;j++){
+        if(i%j==0){
+          c++;
+        }
+
+    }
+    if(c==4){
+        data +="<br> factor 4 of num = " + i  ;
+        data +=" <br> factor are " + f;
+        document.getElementById("display").innerHTML=data;
+
+  }
+  else if(c==2){
+prime +="<br> prime num =  " + i ;
+        document.getElementById("display2").innerHTML=prime;
+        
+}
+
+    }
+}
+
+</script>
+</body>
+</html>
