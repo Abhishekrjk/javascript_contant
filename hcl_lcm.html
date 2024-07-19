@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Abhishek</h1>
+    <input type="text" id="nm1" placeholder="Enter no 1" >
+    <input type="text" id="nm2" placeholder="Enter no 2" >
+    <button onclick="abhi_no()">chack</button>
+    <p id="display1"></p>
+    <p id="display"></p>
+    <script>
+       function abhi_no(){
+        function HCL(a, b) {
+  if (b==0) { //we can also use this !b
+    return a;
+  }
+  return HCL(b, a % b);
+}
+
+function lcm(a, b) {
+  return (a * b) / HCL(a, b); // math.abs we can also use this
+}
+const a =parseInt(document.getElementById("nm1").value);
+const b =parseInt(document.getElementById("nm2").value);
+    
+       
+
+document.write(`HCF of ${a} and ${b} is ${HCL(a, b)}<br>`);
+document.write(`LCM of ${a} and ${b} is ${lcm(a, b)}`);
+       }
+    </script>
+</body>
+</html>
